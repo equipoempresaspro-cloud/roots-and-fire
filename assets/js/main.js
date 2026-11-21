@@ -20,8 +20,8 @@ const SITE = {
   menuPdf: "",
 };
 
-// Set to false (and remove the .preview-bar block + body class "is-preview") before going live.
-const SHOW_PENDING_MARKERS = true;
+// Set to true to show a yellow dot on every element whose data is still pending (useful for internal reviews).
+const SHOW_PENDING_MARKERS = false;
 
 /* ---------- Links ---------- */
 const toastEl = document.querySelector("[data-toast]");

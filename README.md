@@ -27,7 +27,9 @@ No se usa Toast ni pedidos propios: todo pedido individual va a Uber Eats / Door
 - `assets/js/main.js`: **todos los enlaces externos están en el objeto `SITE` al inicio**. Si se cambian ahí, se actualizan todos los botones.
 - `assets/img/`: fotos optimizadas para web (convertidas de los HEIC del Drive).
 
-## Pendiente de confirmar (marcado con un punto amarillo en la vista previa)
+## Pendiente de confirmar
+
+Para ver estos elementos marcados con un punto amarillo, poner `SHOW_PENDING_MARKERS = true` en `main.js`.
 
 | Dato | Dónde cambiarlo | Fuente |
 |---|---|---|
@@ -43,7 +45,5 @@ No se usa Toast ni pedidos propios: todo pedido individual va a Uber Eats / Door
 ## Antes de publicar
 
 1. Completar los datos de la tabla anterior.
-2. En `main.js`, poner `SHOW_PENDING_MARKERS = false`.
-3. En `index.html`, borrar el bloque `.preview-bar` y la clase `is-preview` del `<body>`.
-4. Revisar `og:image` y el JSON-LD con la URL final del dominio.
-5. Quitar `<meta name="robots" content="noindex, nofollow">`. Solo sirve para que la demo en GitHub Pages no aparezca en Google.
+2. Revisar `og:image` y el JSON-LD con la URL final del dominio.
+3. Quitar `<meta name="robots" content="noindex, nofollow">`. Solo sirve para que la demo en GitHub Pages no aparezca en Google.
