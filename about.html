@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Story · Roots &amp; Fire</title>
+  <meta name="description" content="Meet Chefs Cesar Alonso Vargas and Lady Diana Fajardo: from The Plaza, Metropolis and Five Acres to their own Peruvian kitchen in Bushwick.">
+  <meta name="theme-color" content="#0E0D06">
+  <!-- Demo copy on GitHub Pages: keep it out of Google so it doesn't compete with rootsandfirenyc.com. Remove on the real domain. -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="assets/img/logo-monogram.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our Story · Roots &amp; Fire">
+  <meta property="og:description" content="Meet Chefs Cesar Alonso Vargas and Lady Diana Fajardo: from The Plaza, Metropolis and Five Acres to their own Peruvian kitchen in Bushwick.">
+  <meta property="og:image" content="assets/img/frying.jpg">
+  <meta property="og:url" content="https://rootsandfirenyc.com/about.html">
+  <link rel="alternate" hreflang="en" href="https://rootsandfirenyc.com/about.html">
+  <link rel="alternate" hreflang="es" href="https://rootsandfirenyc.com/about.html?lang=es">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body data-page="about">
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ===== Header (same on every page) ===== -->
+  <header class="site-header" data-header>
+    <div class="announce">
+      <p class="mono" data-i18n="announce">Now open weekends · 234 Starr St, Bushwick · Order on Uber Eats &amp; DoorDash</p>
+    </div>
+    <div class="header-bar">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-nav-toggle>
+        <span class="sr-only" data-i18n="navOpen">Open menu</span>
+        <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="nav nav--left mono" aria-label="Main">
+        <a href="menu.html" data-i18n="navMenu">Menu</a>
+        <a href="about.html" data-i18n="navStory" aria-current="page">Our Story</a>
+        <a href="catering.html" data-i18n="navCatering">Catering &amp; Events</a>
+      </nav>
+      <a href="index.html" class="brand" aria-label="Roots & Fire, home">
+        <img src="assets/img/logo-monogram.png" alt="" width="30" height="38">
+        <span class="brand__word">Roots &amp; Fire</span>
+      </a>
+      <div class="header-right">
+        <nav class="nav nav--right mono" aria-label="Secondary">
+          <a href="contact.html" data-i18n="navContact">Visit &amp; Contact</a>
+        </nav>
+        <div class="lang mono" role="group" aria-label="Language" data-i18n-attr="aria-label:langLabel">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+        <div class="order-menu" data-order-menu>
+          <button class="btn btn--gold" type="button" aria-expanded="false" aria-haspopup="true" data-order-toggle><span data-i18n="orderNow">Order now</span></button>
+          <div class="order-menu__panel" hidden data-order-panel>
+            <a class="mono" data-link="uberEats" href="#" target="_blank" rel="noopener">Uber Eats <span aria-hidden="true">↗</span></a>
+            <a class="mono" data-link="doorDash" href="#" target="_blank" rel="noopener">DoorDash <span aria-hidden="true">↗</span></a>
+            <a class="mono" href="catering.html#enquire" data-i18n="orderSpecial">Special orders &amp; events</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" data-mobile-nav hidden>
+    <nav aria-label="Mobile">
+      <a href="index.html" data-i18n="navHome">Home</a>
+      <a href="menu.html" data-i18n="navMenu">Menu</a>
+      <a href="about.html" data-i18n="navStory" aria-current="page">Our Story</a>
+      <a href="catering.html" data-i18n="navCatering">Catering &amp; Events</a>
+      <a href="contact.html" data-i18n="navContact">Visit &amp; Contact</a>
+    </nav>
+    <div class="mobile-nav__foot">
+      <div class="lang lang--lg mono" role="group" aria-label="Language" data-i18n-attr="aria-label:langLabel">
+        <button type="button" data-lang="en" aria-pressed="true">English</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-lang="es" aria-pressed="false">Español</button>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--gold" data-link="uberEats" href="#" target="_blank" rel="noopener">Uber Eats</a>
+        <a class="btn btn--line" data-link="doorDash" href="#" target="_blank" rel="noopener">DoorDash</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ===== Page hero (Firedoor About style: statement over full-bleed photo) ===== -->
+    <section class="page-hero page-hero--statement">
+      <img class="pos-mid" src="assets/img/frying.jpg" alt="" width="1200" height="900" fetchpriority="high">
+      <div class="container page-hero__inner">
+        <h1 data-i18n="paTitle">Two chefs, one wok, <em>and a lot of roots.</em></h1>
+        <div class="page-hero__side">
+          <p class="mono" data-i18n="paLead">Roots &amp; Fire was born as a catering company, built by two chefs who came up in some of New York's most demanding kitchens. Today we cook for Brooklyn every weekend from Starr Street.</p>
+          <p class="mono quick-label" data-i18n="quickLinks">Quick links</p>
+          <div class="quick-links">
+            <a class="btn btn--line btn--sm" href="#chefs" data-i18n="ctaChefs">Meet the chefs</a>
+            <a class="btn btn--line btn--sm" href="#words" data-i18n="quotesTitle">In our words</a>
+            <a class="btn btn--gold btn--sm" href="catering.html#enquire" data-i18n="ctaPlanShort">Plan an event</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Story ===== -->
+    <section class="story" aria-labelledby="story-title">
+      <div class="container story__grid">
+        <div class="story__copy reveal">
+          <p class="mono eyebrow" data-i18n="storyEyebrow2">How it started</p>
+          <h2 class="display" id="story-title" data-i18n="storyTitle2"><em>Roots</em> is where we come from. <em>Fire</em> is how we cook.</h2>
+          <div class="prose mono">
+            <p data-i18n="storyP1">Roots &amp; Fire was born as a catering company, built by Chefs Cesar Alonso Vargas and Lady Diana Fajardo after years in some of New York's most demanding kitchens: The Plaza Hotel, Metropolis by Marcus Samuelsson and Five Acres at Rockefeller Center.</p>
+            <p data-i18n="storyP2">Roots is where we come from: the Peruvian and Latin flavors we grew up with. Fire is how we cook them: live flame, a screaming-hot wok and restaurant-level technique.</p>
+            <p data-i18n="storyP3">Today we cook for Brooklyn every weekend from our kitchen on Starr Street, and we still bring the full experience to weddings, parties and private events across NYC.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn--gold" href="menu.html" data-i18n="ctaFullMenu">See the full menu</a>
+            <a class="btn btn--line" href="catering.html" data-i18n="ctaCatering">Explore catering</a>
+          </div>
+        </div>
+        <figure class="story__media frame reveal">
+          <img src="assets/img/now-open-board.jpg" alt="Lit chalkboard sign at 234 Starr St: Roots and Fire, Peruvian Food, Now Open" data-i18n-attr="alt:altBoard" width="900" height="1200" loading="lazy">
+          <figcaption class="mono" data-i18n="storyCaption">Our sign on Starr Street</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Meet the chefs (cream panel) ===== -->
+    <section class="panel panel--cream chefs" id="chefs" aria-labelledby="chefs-title">
+      <div class="container">
+        <h2 class="display center reveal" id="chefs-title" data-i18n="chefsTitle">Meet the Chefs</h2>
+        <div class="team">
+          <article class="member reveal">
+            <img src="assets/img/chef-cesar.jpg" alt="Chef Cesar Alonso Vargas in chef whites" data-i18n-attr="alt:altCesar" width="441" height="792" loading="lazy">
+            <div class="member__cap">
+              <p class="mono" data-i18n="roleCesar">Chef &amp; co-founder</p>
+              <h3>Cesar Alonso Vargas</h3>
+              <p class="mono member__from">The Plaza Hotel · Metropolis</p>
+            </div>
+          </article>
+          <article class="member reveal">
+            <img src="assets/img/chef-lady.jpg" alt="Chef Lady Diana Fajardo smiling, arms crossed, in an apron" data-i18n-attr="alt:altLady" width="1000" height="1000" loading="lazy">
+            <div class="member__cap">
+              <p class="mono" data-i18n="roleLady">Chef &amp; co-founder</p>
+              <h3>Lady Diana Fajardo</h3>
+              <p class="mono member__from">Five Acres · Metropolis</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="highlights reveal">
+          <h3 class="display display--md" data-i18n="hlTitle">Where we've cooked</h3>
+          <div class="hl-table mono">
+            <div class="hl-row hl-row--head"><span data-i18n="hlKitchen">Kitchen</span><span>Chef</span></div>
+            <div class="hl-row"><span>The Plaza Hotel</span><span>Cesar Alonso Vargas</span></div>
+            <div class="hl-row"><span>Metropolis by Marcus Samuelsson</span><span data-i18n="hlBoth">Cesar &amp; Lady</span></div>
+            <div class="hl-row"><span>Five Acres at Rockefeller Center</span><span>Lady Diana Fajardo</span></div>
+            <div class="hl-row"><span>Roots &amp; Fire · Bushwick</span><span data-i18n="hlNow">Both of us, every weekend</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== In our words ===== -->
+    <section class="quotes" id="words" aria-labelledby="quotes-title">
+      <div class="container quotes__grid">
+        <h2 class="display reveal" id="quotes-title" data-i18n="quotesTitle">In our words</h2>
+        <blockquote class="quote-box reveal">
+          <p data-i18n="quote1">“Every dish we create tells a story.”</p>
+          <cite class="mono" data-i18n="quote1Cite">Cesar Alonso, co-founder</cite>
+        </blockquote>
+        <blockquote class="quote-box reveal">
+          <p data-i18n="quote2">“Peru, Venezuela and New York on one table.”</p>
+          <cite class="mono" data-i18n="quote2Cite">Our catering, in one line</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container cta-band__inner">
+        <div>
+          <h2 class="display" id="cta-title" data-i18n="catTitle">Bring the fire <em>to your party.</em></h2>
+          <p class="mono" data-i18n="catLeadShort">From a birthday at home to a 200-guest wedding: passed bites, party trays, live-fire stations and full-service dinners.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--ink btn--lg" href="catering.html#enquire" data-i18n="ctaPlanShort">Plan an event</a>
+          <a class="btn btn--line-ink btn--lg" href="catering.html" data-i18n="ctaCatering">Explore catering</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="footer__hero">
+      <img src="assets/img/tallarin-saltado-dark.jpg" alt="" width="1350" height="1800" loading="lazy">
+      <p class="footer__word" aria-hidden="true">Roots &amp; Fire</p>
+    </div>
+    <div class="container footer__cols mono">
+      <div>
+        <p class="footer__title" data-i18n="ftCooking">Cooking with fire</p>
+        <p data-i18n="ftTagline">Peruvian flavors with a NYC twist</p>
+        <ul>
+          <li><a href="https://www.instagram.com/rootsandfire.official/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@rootsandfire.official" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__title" data-i18n="ftExplore">Explore</p>
+        <ul>
+          <li><a href="menu.html" data-i18n="navMenu">Menu</a></li>
+          <li><a href="about.html" data-i18n="navStory">Our Story</a></li>
+          <li><a href="catering.html" data-i18n="navCatering">Catering &amp; Events</a></li>
+          <li><a href="contact.html" data-i18n="navContact">Visit &amp; Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__title" data-i18n="ftOrder">Order</p>
+        <ul>
+          <li><a href="#" data-link="uberEats" target="_blank" rel="noopener">Uber Eats</a></li>
+          <li><a href="#" data-link="doorDash" target="_blank" rel="noopener">DoorDash</a></li>
+          <li><a href="#" data-link="whatsapp" data-wa-key="waSpecial" data-i18n="ftSpecial">Special orders (WhatsApp)</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__title" data-i18n="ftVisit">Visit</p>
+        <p>234 Starr St<br>Brooklyn, NY 11237</p>
+        <p data-i18n="ftHours">Fri – Sun · Takeout &amp; delivery</p>
+      </div>
+    </div>
+    <div class="container footer__bottom mono">
+      <p>© <span data-year>2026</span> Roots &amp; Fire NYC. <span data-i18n="ftRights">All rights reserved.</span></p>
+      <p data-i18n="ftCatering">Catering &amp; events across New York City.</p>
+    </div>
+  </footer>
+
+  <div class="order-bar" aria-label="Order now" data-i18n-attr="aria-label:orderNow">
+    <a class="btn btn--gold" data-link="uberEats" href="#" target="_blank" rel="noopener">Uber Eats</a>
+    <a class="btn btn--line" data-link="doorDash" href="#" target="_blank" rel="noopener">DoorDash</a>
+    <a class="btn btn--line btn--icon" data-link="whatsapp" data-wa-key="waHello" href="#" aria-label="WhatsApp">
+      <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19L4 20z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8c-.9-.4-1.6-1.1-2-2l.8-1-1-2L9 9.5z" fill="currentColor" stroke="none"/></svg>
+    </a>
+  </div>
+
+  <div class="toast mono" role="status" aria-live="polite" data-toast></div>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
