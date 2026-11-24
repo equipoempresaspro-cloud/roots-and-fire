@@ -249,14 +249,19 @@ body[data-page="home"] .header-bar { background: var(--black); }
 
 /* ---------- Menu: large photos stacked vertically ---------- */
 .menu { padding: var(--section-y) 0; }
-.menu__grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; max-width: 860px; }
+.menu__grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; max-width: 1040px; }
 .menu__intro { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
 .dish-list { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(28px, 4vw, 44px); }
-.dish-card { min-width: 0; width: 100%; max-width: 560px; margin-inline: auto; }
+.dish-card { min-width: 0; width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: clamp(24px, 5vw, 64px); }
 .dish-card__img { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: var(--brown); }
 .dish-card__img img { width: 100%; height: 100%; object-fit: cover; }
 .dish-card__img img[src*="burger"] { object-position: center 35%; }
-.dish-card h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(25px, 2.5vw, 32px); line-height: 1.1; margin-top: 12px; }
+.dish-card h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(25px, 2.5vw, 32px); line-height: 1.1; margin-top: 0; }
+ .dish-card__copy { display: grid; gap: 14px; }
+.dish-card__copy p { font-size: 16px; line-height: 1.65; max-width: 30ch; color: var(--stone); }
+.menu-download { display: grid; justify-items: center; gap: 12px; margin-top: 40px; text-align: center; }
+.menu-download p { font-size: 14px; color: var(--stone); }
+.menu-download [aria-disabled="true"] { opacity: .5; cursor: default; }
 .note { font-size: 14px; color: rgba(20, 16, 6, 0.72); }
 .note a { color: var(--ink); }
 
@@ -447,7 +452,7 @@ body[data-page="home"] .header-bar { background: var(--black); }
 
 /* Menu page: dishes by category */
 .menu-page { padding: var(--section-y) 0; }
-.menu-page > .container { max-width: 760px; }
+.menu-page > .container { max-width: 1040px; }
 .menu-cat { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; padding: 48px 0 72px; border-top: 1px solid var(--line-ink); }
 .menu-cat:first-child { border-top: 0; padding-top: 0; }
 .menu-cat__head { display: grid; gap: 12px; }
@@ -546,7 +551,7 @@ body[data-page="home"] .header-bar { background: var(--black); }
 }
 
 @media (max-width: 640px) {
-  .dish-card { max-width: 360px; }
+  .dish-card { grid-template-columns: minmax(0, 1fr); max-width: 420px; margin-inline: auto; gap: 18px; }
   .dish-card__img { aspect-ratio: 4 / 3; }
   :root { --bar-h: 64px; }
   .announce p { font-size: 10px; }

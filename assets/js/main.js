@@ -56,6 +56,11 @@ function buildHref(kind, el) {
 function updateLinks() {
   document.querySelectorAll("[data-link]").forEach((el) => {
     const href = buildHref(el.dataset.link, el);
+    if (el.hasAttribute("data-menu-download")) {
+      if (href) el.removeAttribute("aria-disabled");
+      else el.setAttribute("aria-disabled", "true");
+      document.querySelectorAll("[data-menu-download-status]").forEach((status) => { status.hidden = Boolean(href); });
+    }
     if (href) {
       el.setAttribute("href", href);
       if (el.dataset.link !== "phone") {
@@ -75,6 +80,7 @@ document.addEventListener("click", (e) => {
   const el = e.target.closest("[data-link][data-pending]");
   if (!el) return;
   e.preventDefault();
+  if (el.hasAttribute("data-menu-download")) return;
   const label = (t("labels") || {})[el.dataset.link] || "link";
   toast(t("pending").replace("{label}", label));
 });

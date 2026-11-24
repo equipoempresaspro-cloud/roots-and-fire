@@ -23,8 +23,8 @@ Todas comparten la barra de aviso dorada, el encabezado (menú, logo centrado, E
 
 | Página | Archivo | Contenido |
 |---|---|---|
-| Inicio | `index.html` | Hero con 3 fotografías sin texto superpuesto y un avance de cada sección que lleva a su página: selección vertical de 11 fotos → Menú, historia → Nuestra historia, 3 servicios → Catering, Instagram, horario → Contacto. |
-| Menú | `menu.html` | Los 11 platos en una columna, con fotos compactas y solo el nombre, por categoría (Del wok, Burgers y street food, Para compartir, Dulces) y una franja dorada para pedir. Sin precios: viven en las apps. |
+| Inicio | `index.html` | Hero con 3 fotografías sin texto superpuesto y un avance de cada sección que lleva a su página: selección vertical de 11 platos con foto y texto breve → Menú, historia → Nuestra historia, 3 servicios → Catering, Instagram, horario → Contacto. |
+| Menú | `menu.html` | Los 11 platos en una columna, con fotos a la izquierda, nombre y una descripción breve a la derecha, por categoría (Del wok, Burgers y street food, Para compartir, Dulces) y una franja dorada para pedir. Sin precios: viven en las apps. |
 | Nuestra historia | `about.html` | La historia, los chefs Cesar y Lady (#chefs), la tabla "Where we've cooked", las citas (#words) y un llamado a catering. |
 | Catering y eventos | `catering.html` | Los 4 servicios (#services), "How it works" (#how) y el formulario de consultas (#enquire), que abre WhatsApp con el mensaje armado. |
 | Visítanos y contacto | `contact.html` | Mapa, dirección, horario, contacto y dos llamados: pedir por las apps o consultar por un evento. |
@@ -63,3 +63,5 @@ Mientras falte un dato, el botón muestra un aviso de "pendiente" en vez de llev
 1. Completar los datos de la tabla anterior.
 2. Revisar `og:image`, los `hreflang` y el JSON-LD con la URL final del dominio.
 3. Quitar `<meta name="robots" content="noindex, nofollow">` de las 5 páginas. Solo sirve para que la demo en GitHub Pages no aparezca en Google.
+
+El botón «Descargar menú» al final del menú queda pendiente hasta añadir la URL del PDF en `SITE.menuPdf` de `assets/js/main.js`.
