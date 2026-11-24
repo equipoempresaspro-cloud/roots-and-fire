@@ -171,15 +171,16 @@ window.addEventListener("resize", () => { if (window.innerWidth > 1100) setNav(f
 
 /* ---------- Hero slideshow ---------- */
 const slides = [...document.querySelectorAll("[data-slide]")];
-const slideTexts = [...document.querySelectorAll("[data-slide-text]")];
 const dots = [...document.querySelectorAll("[data-dot]")];
+const pauseSlideshow = document.querySelector("[data-slideshow-pause]");
+let slideshowPaused = reduceMotion;
+let slideshowHovered = false;
 let current = 0;
 let timer;
 
 function showSlide(i) {
   current = (i + slides.length) % slides.length;
-  slides.forEach((s, n) => s.classList.toggle("is-active", n === current));
-  slideTexts.forEach((s, n) => {
+  slides.forEach((s, n) => {
     s.classList.toggle("is-active", n === current);
     s.setAttribute("aria-hidden", String(n !== current));
   });
@@ -192,11 +193,21 @@ function showSlide(i) {
   if (next) next.loading = "eager";
 }
 function startAutoplay() {
-  if (reduceMotion || slides.length < 2) return;
   clearInterval(timer);
+  if (slideshowPaused || slideshowHovered || document.hidden || hero?.contains(document.activeElement) || slides.length < 2) return;
   timer = setInterval(() => showSlide(current + 1), 6500);
 }
 if (slides.length) {
+  pauseSlideshow?.setAttribute("aria-pressed", String(slideshowPaused));
+  pauseSlideshow?.addEventListener("click", () => {
+    slideshowPaused = !slideshowPaused;
+    pauseSlideshow.setAttribute("aria-pressed", String(slideshowPaused));
+    startAutoplay();
+  });
+  hero?.addEventListener("mouseenter", () => { slideshowHovered = true; clearInterval(timer); });
+  hero?.addEventListener("mouseleave", () => { slideshowHovered = false; startAutoplay(); });
+  hero?.addEventListener("focusin", () => clearInterval(timer));
+  hero?.addEventListener("focusout", () => setTimeout(startAutoplay, 0));
   dots.forEach((d) => d.addEventListener("click", () => { showSlide(Number(d.dataset.dot)); startAutoplay(); }));
   document.addEventListener("visibilitychange", () => { if (document.hidden) clearInterval(timer); else startAutoplay(); });
   showSlide(0);
@@ -230,37 +241,6 @@ if ("IntersectionObserver" in window) {
   }, { threshold: 0.4 });
   document.querySelectorAll("[data-stats]").forEach((s) => statsIO.observe(s));
 }
-
-/* ---------- Menu carousel ---------- */
-document.querySelectorAll("[data-carousel]").forEach((root) => {
-  const track = root.querySelector("[data-track]");
-  const cards = [...track.children];
-  const prev = root.querySelector("[data-prev]");
-  const next = root.querySelector("[data-next]");
-  const countEl = root.querySelector("[data-count-current]");
-  const bar = root.querySelector("[data-progress]");
-  const step = () => (cards[1] ? cards[1].offsetLeft - cards[0].offsetLeft : track.clientWidth);
-
-  function update() {
-    const max = track.scrollWidth - track.clientWidth;
-    const idx = Math.min(cards.length - 1, Math.round(track.scrollLeft / step()));
-    const atEnd = track.scrollLeft >= max - 4;
-    const shown = atEnd ? cards.length : idx + 1;
-    if (countEl) countEl.textContent = String(shown).padStart(2, "0");
-    if (bar) bar.style.width = `${Math.max(8, (shown / cards.length) * 100)}%`;
-    if (prev) prev.disabled = track.scrollLeft <= 4;
-    if (next) next.disabled = atEnd;
-  }
-  prev?.addEventListener("click", () => track.scrollBy({ left: -step(), behavior: reduceMotion ? "auto" : "smooth" }));
-  next?.addEventListener("click", () => track.scrollBy({ left: step(), behavior: reduceMotion ? "auto" : "smooth" }));
-  track.addEventListener("scroll", () => requestAnimationFrame(update), { passive: true });
-  track.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowRight") { e.preventDefault(); next?.click(); }
-    if (e.key === "ArrowLeft") { e.preventDefault(); prev?.click(); }
-  });
-  window.addEventListener("resize", update);
-  update();
-});
 
 /* ---------- Event enquiry form → WhatsApp ---------- */
 const form = document.querySelector("[data-enquiry]");

@@ -64,6 +64,11 @@ window.RF_I18N = {
     orderNow: "Pedir ahora",
     orderSpecial: "Pedidos especiales y eventos",
 
+    altHeroWings: "Chef terminando unas alitas glaseadas en un plato azul y blanco",
+    altHeroBurger: "Smash burger con huevo frito y papas onduladas doradas",
+    altHeroTequenos: "Tequeños dorados y crocantes alrededor de una salsa verde",
+    slidesLabel: "Fotografías",
+    pauseSlideshow: "Pausar o reanudar las fotografías",
     altHero1: "Tallarín saltado en un bowl de cerámica negra",
     altHero2: "Chef emplatando alitas glaseadas con pinzas",
     altFrying: "Chef sosteniendo una canasta con comida recién frita en la cocina",

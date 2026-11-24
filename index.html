@@ -111,69 +111,39 @@
   </div>
 
   <main id="main">
-    <!-- ===== Hero (Peter Rowland style) ===== -->
+    <!-- ===== Photo carousel ===== -->
     <section class="hero" aria-roledescription="carousel" aria-label="Roots & Fire">
+      <h1 class="sr-only">Roots &amp; Fire · Peruvian Kitchen &amp; Catering</h1>
       <div class="hero__slides">
         <figure class="hero__slide is-active" data-slide>
-          <img src="assets/img/tallarin-saltado-dark.jpg" alt="Tallarín saltado in a black stoneware bowl" data-i18n-attr="alt:altHero1" width="1350" height="1800" fetchpriority="high">
+          <picture>
+            <source media="(max-width: 640px)" srcset="assets/img/hero-wings-mobile.webp" width="900" height="1200">
+            <img src="assets/img/hero-wings.webp" alt="Chef finishing glossy glazed wings on a blue and white plate" data-i18n-attr="alt:altHeroWings" width="2000" height="1125" fetchpriority="high">
+          </picture>
         </figure>
-        <figure class="hero__slide" data-slide>
-          <img src="assets/img/wings-plating.jpg" alt="Chef plating glazed wings with tweezers" data-i18n-attr="alt:altHero2" width="1600" height="900" loading="lazy">
+        <figure class="hero__slide" data-slide aria-hidden="true">
+          <picture>
+            <source media="(max-width: 640px)" srcset="assets/img/hero-burger-mobile.webp" width="900" height="1200">
+            <img src="assets/img/hero-burger.webp" alt="Smash burger with a fried egg and golden crinkle fries" data-i18n-attr="alt:altHeroBurger" width="2000" height="1125" loading="lazy">
+          </picture>
         </figure>
-        <figure class="hero__slide" data-slide>
-          <img class="pos-wok" src="assets/img/chaufa-wok.jpg" alt="Chef tossing chaufa fried rice out of a carbon-steel wok into a bowl" data-i18n-attr="alt:altWok" width="787" height="1400" loading="lazy">
+        <figure class="hero__slide" data-slide aria-hidden="true">
+          <picture>
+            <source media="(max-width: 640px)" srcset="assets/img/hero-tequenos-mobile.webp" width="900" height="1200">
+            <img src="assets/img/hero-tequenos.webp" alt="Golden crispy tequeños surrounding a bowl of green dipping sauce" data-i18n-attr="alt:altHeroTequenos" width="2000" height="1125" loading="lazy">
+          </picture>
         </figure>
       </div>
-      <div class="hero__shade" aria-hidden="true"></div>
-
-      <ul class="hero__social" aria-label="Social">
-        <li><a href="https://www.instagram.com/rootsandfire.official/" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-        </a></li>
-        <li><a href="https://www.tiktok.com/@rootsandfire.official" target="_blank" rel="noopener" aria-label="TikTok">
-          <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 2.5 2.3 4.3 5 4.5"/></svg>
-        </a></li>
-        <li><a href="#" data-link="whatsapp" data-wa-key="waHello" aria-label="WhatsApp">
-          <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19L4 20z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8c-.9-.4-1.6-1.1-2-2l.8-1-1-2L9 9.5z" fill="currentColor" stroke="none"/></svg>
-        </a></li>
-      </ul>
-
-      <div class="hero__content">
-        <div class="hero__texts">
-          <div class="hero__text is-active" data-slide-text>
-            <p class="mono hero__eyebrow" data-i18n="h1Eyebrow">Weekend kitchen · Bushwick, Brooklyn</p>
-            <h1 class="hero__title" data-i18n="h1Title">Every Weekend</h1>
-            <p class="hero__lead" data-i18n="h1Lead">Peruvian flavors with a NYC twist: lomo saltado off a roaring wok, smash burgers, sticky wings and chaufa, delivered to your door.</p>
-          </div>
-          <div class="hero__text" data-slide-text aria-hidden="true">
-            <p class="mono hero__eyebrow" data-i18n="h2Eyebrow">Catering &amp; events across NYC</p>
-            <p class="hero__title" data-i18n="h2Title">Every Celebration</p>
-            <p class="hero__lead" data-i18n="h2Lead">From a birthday at home to a 200-guest wedding, we cook the same food, scaled up, beautifully presented and served by our team.</p>
-          </div>
-          <div class="hero__text" data-slide-text aria-hidden="true">
-            <p class="mono hero__eyebrow" data-i18n="h3Eyebrow">Two chefs · One wok</p>
-            <p class="hero__title" data-i18n="h3Title">Born from Fire</p>
-            <p class="hero__lead" data-i18n="h3Lead">Restaurant-level technique from The Plaza, Metropolis and Five Acres, cooked over live flame with the Latin flavors we grew up with.</p>
-          </div>
-        </div>
-        <div class="hero__actions">
-          <a class="btn btn--gold btn--lg" data-link="uberEats" href="#" target="_blank" rel="noopener" data-i18n="ctaUber">Order on Uber Eats</a>
-          <a class="btn btn--line btn--lg" data-link="doorDash" href="#" target="_blank" rel="noopener" data-i18n="ctaDash">Order on DoorDash</a>
-        </div>
-        <a class="text-link mono" href="catering.html#enquire" data-i18n="ctaPlan">Planning an event? Let's talk →</a>
-        <div class="hero__dots" role="group" aria-label="Slides">
-          <button type="button" class="is-active" data-dot="0" aria-label="Slide 1" data-i18n-attr="aria-label:dot1"></button>
+      <div class="hero__controls">
+        <div class="hero__dots" role="group" aria-label="Slides" data-i18n-attr="aria-label:slidesLabel">
+          <button type="button" class="is-active" data-dot="0" aria-current="true" aria-label="Slide 1" data-i18n-attr="aria-label:dot1"></button>
           <button type="button" data-dot="1" aria-label="Slide 2" data-i18n-attr="aria-label:dot2"></button>
           <button type="button" data-dot="2" aria-label="Slide 3" data-i18n-attr="aria-label:dot3"></button>
         </div>
+        <button class="hero__pause" type="button" data-slideshow-pause aria-label="Pause slideshow" aria-pressed="false" data-i18n-attr="aria-label:pauseSlideshow">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path class="pause-icon" d="M8 6v12M16 6v12" fill="none" stroke="currentColor" stroke-width="3"/><path class="play-icon" d="m8 5 11 7-11 7z" fill="currentColor"/></svg>
+        </button>
       </div>
-
-      <dl class="stats" data-stats>
-        <div class="stat"><dt class="stat__label" data-i18n="stat1">Chefs &amp; co-founders</dt><dd class="stat__num" data-count="2">2</dd></div>
-        <div class="stat"><dt class="stat__label" data-i18n="stat2">Iconic NYC kitchens behind us</dt><dd class="stat__num" data-count="3">3</dd></div>
-        <div class="stat"><dt class="stat__label" data-i18n="stat3">Dishes every weekend</dt><dd class="stat__num" data-count="11">11</dd></div>
-        <div class="stat"><dt class="stat__label" data-i18n="stat4">Guests, from home parties to weddings</dt><dd class="stat__num" data-count="200" data-suffix="+">200+</dd></div>
-      </dl>
     </section>
 
     <!-- ===== Intro statement ===== -->
@@ -191,68 +161,30 @@
       </div>
     </section>
 
-    <!-- ===== Menu preview (cream panel + carousel) ===== -->
+    <!-- ===== Menu: vertical photo selection ===== -->
     <section class="panel panel--cream menu" aria-labelledby="menu-title">
       <div class="container menu__grid">
         <div class="menu__intro reveal">
-          <p class="mono eyebrow" data-i18n="menuEyebrow">The weekend menu</p>
-          <h2 class="display" id="menu-title" data-i18n="menuTitle">Cooked to order, <em>every weekend.</em></h2>
-          <p class="mono body" data-i18n="menuBody">A short menu built around the wok and the grill. Prices, combos and live availability are always up to date on Uber Eats and DoorDash.</p>
-          <p class="mono small" data-i18n="menuMeta">Friday to Sunday · Takeout &amp; delivery · No dine-in</p>
-          <div class="btn-row">
-            <a class="btn btn--ink" href="menu.html" data-i18n="ctaFullMenu">See the full menu</a>
-            <a class="btn btn--line-ink" data-link="uberEats" href="#" target="_blank" rel="noopener" data-i18n="ctaUber">Order on Uber Eats</a>
-            <a class="btn btn--line-ink" data-link="doorDash" href="#" target="_blank" rel="noopener" data-i18n="ctaDash">Order on DoorDash</a>
-          </div>
+          <h2 class="display" id="menu-title" data-i18n="menuEyebrow">The weekend menu</h2>
+          <a class="btn btn--ink" href="menu.html" data-i18n="ctaFullMenu">See the full menu</a>
         </div>
-
-        <div class="carousel" data-carousel>
-          <div class="carousel__track" data-track tabindex="0" aria-label="Dishes" data-i18n-attr="aria-label:dishesLabel">
-            <article class="dish-card">
-              <div class="dish-card__img"><img src="assets/img/lomo-saltado.jpg" alt="Lomo saltado with white rice and fries" data-i18n-attr="alt:altLomo" width="1400" height="1050" loading="lazy"><span class="tag mono" data-i18n="tagFav">Favorite</span></div>
-              <div class="dish-card__meta mono"><span>01</span><span data-i18n="catWok">From the wok</span></div>
-              <h3>Lomo Saltado</h3>
-              <p class="mono" data-i18n="dLomo">Beef tenderloin flash-seared in the wok with red onion, tomato and a soy–vinegar jus. Served with fries and white rice.</p>
-            </article>
-            <article class="dish-card">
-              <div class="dish-card__img"><img src="assets/img/tallarin-saltado.jpg" alt="Tallarín saltado in a black bowl" data-i18n-attr="alt:altTallarin" width="1050" height="1400" loading="lazy"><span class="tag mono" data-i18n="tagFav">Favorite</span></div>
-              <div class="dish-card__meta mono"><span>02</span><span data-i18n="catWok">From the wok</span></div>
-              <h3>Tallarín Saltado</h3>
-              <p class="mono" data-i18n="dTallarin">Everything you love about the saltado, tossed with noodles in a smoky, glossy wok sauce.</p>
-            </article>
-            <article class="dish-card">
-              <div class="dish-card__img"><img src="assets/img/smash-burger.jpg" alt="Smash burger with bacon, fried egg and crinkle fries" data-i18n-attr="alt:altBurger" width="1050" height="1400" loading="lazy"><span class="tag mono" data-i18n="tagFav">Favorite</span></div>
-              <div class="dish-card__meta mono"><span>03</span><span data-i18n="catStreet">Burgers &amp; street food</span></div>
-              <h3>Smash Burger</h3>
-              <p class="mono" data-i18n="dBurger">Crispy-edged smashed beef, bacon, fried egg, lettuce and tomato on a toasted brioche bun. Crinkle fries on the side.</p>
-            </article>
-            <article class="dish-card">
-              <div class="dish-card__img"><img src="assets/img/wings-huacatay.jpg" alt="Glazed wings with a green herb dip" data-i18n-attr="alt:altWings" width="1400" height="1050" loading="lazy"><span class="tag mono" data-i18n="tagFav">Favorite</span></div>
-              <div class="dish-card__meta mono"><span>04</span><span data-i18n="catShare">To share</span></div>
-              <h3>Wings</h3>
-              <p class="mono" data-i18n="dWings">Crispy wings lacquered in a sticky chili glaze, finished with fresh chili and herbs, with a creamy green dip.</p>
-            </article>
-            <article class="dish-card">
-              <div class="dish-card__img"><img src="assets/img/chaufa-pollo.jpg" alt="Chicken chaufa fried rice in a blue bowl" data-i18n-attr="alt:altChaufa" width="1050" height="1400" loading="lazy"></div>
-              <div class="dish-card__meta mono"><span>05</span><span data-i18n="catWok">From the wok</span></div>
-              <h3>Chaufa de Pollo</h3>
-              <p class="mono" data-i18n="dChaufa">Peruvian-Chinese fried rice with chicken, egg and scallion, wok-fired to order.</p>
-            </article>
-            <article class="dish-card">
-              <div class="dish-card__img"><img src="assets/img/churros.jpg" alt="Sugar-dusted churros with dulce de leche" data-i18n-attr="alt:altChurros" width="1050" height="1400" loading="lazy"></div>
-              <div class="dish-card__meta mono"><span>06</span><span data-i18n="catSweet">Sweets</span></div>
-              <h3>Churros</h3>
-              <p class="mono" data-i18n="dChurros">Sugar-dusted churros with dulce de leche for dipping. The only way to end it.</p>
-            </article>
-          </div>
-          <div class="carousel__ctrl">
-            <p class="mono carousel__count" aria-live="polite"><span data-count-current>01</span> / <span>06</span></p>
-            <div class="carousel__bar" aria-hidden="true"><span data-progress></span></div>
-            <div class="carousel__arrows">
-              <button type="button" data-prev aria-label="Previous dish" data-i18n-attr="aria-label:prevDish"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-              <button type="button" data-next aria-label="Next dish" data-i18n-attr="aria-label:nextDish"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
-            </div>
-          </div>
+        <div class="dish-list">
+          <article class="dish-card reveal">
+            <div class="dish-card__img"><img src="assets/img/hero-burger-mobile.webp" alt="Smash burger with fried egg and crinkle fries" data-i18n-attr="alt:altHeroBurger" width="900" height="1200" loading="lazy"></div>
+            <h3>Smash Burger</h3>
+          </article>
+          <article class="dish-card reveal">
+            <div class="dish-card__img"><img src="assets/img/tallarin-saltado-dark.jpg" alt="Tallarín saltado in a black bowl" data-i18n-attr="alt:altTallarin" width="1350" height="1800" loading="lazy"></div>
+            <h3>Tallarín Saltado</h3>
+          </article>
+          <article class="dish-card reveal">
+            <div class="dish-card__img"><img src="assets/img/hero-wings.webp" alt="Chef finishing glazed wings" data-i18n-attr="alt:altHeroWings" width="2000" height="1125" loading="lazy"></div>
+            <h3>Wings</h3>
+          </article>
+          <article class="dish-card reveal">
+            <div class="dish-card__img"><img src="assets/img/tequenos.jpg" alt="Golden tequeños with green dipping sauce" data-i18n-attr="alt:altTequenos" width="1400" height="1050" loading="lazy"></div>
+            <h3>Tequeños</h3>
+          </article>
         </div>
       </div>
     </section>
