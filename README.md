@@ -13,8 +13,8 @@ Abrir http://localhost:5173. Para verlo en español: http://localhost:5173/?lang
 ## Dirección de diseño
 
 - **Hero** inspirado en Five Acres: tres fotografías a pantalla completa, sin texto, botones de pedido ni contadores sobre las imágenes; indicadores inferiores y control de pausa. Encuadres independientes para escritorio y móvil. Fotos del Drive: `IMG_0422.JPG` (alitas), `IMG_8202.HEIC` (hamburguesa) y `IMG_0317.HEIC` (tequeños), optimizadas como `hero-*.webp`.
-- **Secciones** inspiradas en Firedoor (páginas Events y About de firedoor.com.au): títulos serif finos, textos cortos en mayúsculas monoespaciadas, paneles crema, bloques foto/texto alternados, formulario de eventos en un bloque de color y el nombre gigante en el pie.
-- **Colores**: la paleta de rootsandfirenyc.com (`#DCA54A` dorado, `#D09A40`, `#FAF5E5` crema, `#0E0D06`, `#141006`, `#1B1B1B`, `#2E2D2A`, blanco).
+- **Secciones** inspiradas en Firedoor (páginas Events y About de firedoor.com.au): títulos serif finos, textos cortos en mayúsculas monoespaciadas, paneles blancos, bloques foto/texto alternados, formulario de eventos en un bloque de color y el nombre gigante en el pie.
+- **Colores**: la paleta de rootsandfirenyc.com (`#DCA54A` dorado, `#D09A40`, `#FFFFFF` blanco, `#0E0D06`, `#141006`, `#1B1B1B`, `#2E2D2A`, blanco).
 - **Tipografías**: Instrument Serif (títulos), DM Mono (etiquetas y textos cortos), Plus Jakarta Sans (la del sitio actual, para textos largos y formularios).
 
 ## Páginas
@@ -23,8 +23,8 @@ Todas comparten la barra de aviso dorada, el encabezado (menú, logo centrado, E
 
 | Página | Archivo | Contenido |
 |---|---|---|
-| Inicio | `index.html` | Hero con 3 fotografías sin texto superpuesto, frase de presentación y un avance de cada sección que lleva a su página: selección vertical de 4 fotos → Menú, historia → Nuestra historia, 3 servicios → Catering, Instagram, horario → Contacto. |
-| Menú | `menu.html` | Los 11 platos en una columna, con fotos grandes y solo el nombre, por categoría (Del wok, Burgers y street food, Para compartir, Dulces) y una franja dorada para pedir. Sin precios: viven en las apps. |
+| Inicio | `index.html` | Hero con 3 fotografías sin texto superpuesto y un avance de cada sección que lleva a su página: selección vertical de 11 fotos → Menú, historia → Nuestra historia, 3 servicios → Catering, Instagram, horario → Contacto. |
+| Menú | `menu.html` | Los 11 platos en una columna, con fotos compactas y solo el nombre, por categoría (Del wok, Burgers y street food, Para compartir, Dulces) y una franja dorada para pedir. Sin precios: viven en las apps. |
 | Nuestra historia | `about.html` | La historia, los chefs Cesar y Lady (#chefs), la tabla "Where we've cooked", las citas (#words) y un llamado a catering. |
 | Catering y eventos | `catering.html` | Los 4 servicios (#services), "How it works" (#how) y el formulario de consultas (#enquire), que abre WhatsApp con el mensaje armado. |
 | Visítanos y contacto | `contact.html` | Mapa, dirección, horario, contacto y dos llamados: pedir por las apps o consultar por un evento. |
